@@ -226,6 +226,15 @@ do{
 }while(condition);
 
 
+# Jump Statement
+> break
+> continue
+
+break is used inside a loop to terminate the existing statement and resume the control from next statement
+
+continue is used to step over the current statement
+
+
 
 
 
