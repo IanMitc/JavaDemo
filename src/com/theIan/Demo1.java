@@ -1,4 +1,4 @@
-package com.thevarungupta.Day1;
+package com.theIan;
 
 class Demo{
     static int z = 100; // static variable
