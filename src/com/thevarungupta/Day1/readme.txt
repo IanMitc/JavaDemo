@@ -235,6 +235,125 @@ break is used inside a loop to terminate the existing statement and resume the c
 continue is used to step over the current statement
 
 
+# OOPs (Object Oriented Programming)
+Object means a real time entity such as car, chair, table ect
+Object oriented programming is a methodology or paradigm to design a program using classes and object
+It simplifies software development and maintence by providing some key feature
+
+> object
+> class
+
+
+the four main pillers in OOPs
+1. inheritence
+2. polymorphism
+3. encapsulation
+4. abstraction
+
+# Object
+Any entity that has state and behaviour is know as object for example Car, Chair, Table, etc
+An object can be define as an instance of a class
+An object take some amount of space in the memory to maintain its state (data)
+object can communicate with the class properties and methods
+
+
+# Class
+a class is a logical container in which we can define methods and variables
+A class can also be deined as a blue print from which you can create an indiviual object
+class doesn't consume any space
+
+
+# class naming convention
+> it should start with uppercase letter
+> it should start with character not numbner or any special character
+> it should be title case if we have more then two world    
+> try to give a meaning full to a class
+
+for eample
+helloworld - x    
+1hellow - x
+@Hello - x
+HelloWorld
+
+
+# What a class can contain
+> fields
+> method
+> constructor
+> block
+> nested class and interface
+
+
+class can contain members
+> member variable
+> member function / method
+
+
+
+Sytax
+-----
+<access_modifier> class <class_name>{
+
+ // member variable
+ <access_modifier> <data_type> <variable_name>
+ <access_modifier> <data_type> <variable_name>
+
+
+  // member method
+ <access_modifer> <return type> <method_name>(<parameter>){
+  // body
+ }
+}
+
+
+# the new keyword is used to allocate memeory at runtime
+All the object get memoery in heap memoery area
+
+# DRY - Dont repeat your self
+
+Method in java  - expose the behaviour of object
+Advantage
+1. Code resuability
+2. Code optimaization
+
+
+
+# Constructor
+> It is special method presnet under the class responsable for initiliazting the class variable
+> Constructor are the special method which get call immediatley when we create the object of the clas
+> the name of the constructor method should bve same namne as of the class in which it is present
+> each and every class require a constructor if we want to create the instance of the class
+> it is a responsibility of a programmer to create a constructor for the class but if he fails to do so the compiler
+will create a default constructor or implicit constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
