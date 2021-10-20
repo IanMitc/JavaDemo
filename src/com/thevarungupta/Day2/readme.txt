@@ -126,6 +126,27 @@ super-class
 > when we use the final keyword with class, no other class can able to inherit from that class
 
 
+# Abstraction
+Abstraction is a process of hiding the implemtation details and showing only functionality to the user.
+in another way, it shows only essential things to the user and hides the internal details
+
+# Abstarct class and method
+> A class which declared with abstract keyword is know as abstarct class
+> Abstract class can contain abstract as well non-abstract method
+> Abstract class consider as incomplete hence we cannot able to create an instance of the abstract class
+> abstract class always be a super class
+> the class derived from the abstract class is responsable for providing the implementation or body of the
+  abstract method
+> A non-abstract class derived from the abstarct class must provide the implementation of all abstract methods
+
+> Abstract method cannot have body or implementation, and if we try to do so, it will be a compile time
+error
+> only abstract class contain abstract method
+
+
+Rectange, Circle, Cone, Traingle
+
+width, height, radius, pie, 
 
 
 

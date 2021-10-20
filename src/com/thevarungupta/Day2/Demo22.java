@@ -8,6 +8,10 @@ final class Parent3{
 //
 //}
 
+class X{
+    public final static String KEY = "KEY";
+}
+
 
 public class Demo22 {
     public static void main(String[] args) {
