@@ -82,7 +82,36 @@ If we apply a static keyword with any method, it will be know as static method
 
 Note: Static members can only access static members only
 
+# Polymorphism
+> This is one of the main piller of OOP
+> Poly (many) + Morph (shape)
+> this allows you to invoke the derived class method through a base class reference during runtime
 
+# There are types of polymorphism
+1. static / compile time
+2. dynamic / runtime
+
+Method overloading - static
+Method overriding - dynamic
+
+# Method overloading 
+> in this case, we define multiple methods with the same name by changing their parameters
+> this can be performed either within a class as well as between parent and child class also
+> method overloading is all about defining multiple or adding behaviour to a method
+
+Condition for method overloading
+1. different number of parameter
+2. different type of parameter
+3. different order of parameter
+4. different return type - NO
+
+# Method Overriding
+> Method overriding is used to provide the specific implementation of a method that is already provided by the 
+super-class
+> method overriding is used for runtime polymorphism
+> it is all about changing the behavior
+> in this case, we define multiple method with the same name and same parameter
+> this can be performed only between parent and child class and never can be done within class
 
 
 
