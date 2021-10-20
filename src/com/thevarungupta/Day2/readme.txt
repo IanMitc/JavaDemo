@@ -59,7 +59,28 @@ except private members of the parent class
 5. Hybrid
 
 
+# Static
 
+The static keyword in java is used for memory management
+we can use static keyword with variable, methods, blocks and nested classes
+
+# static variable
+> the static variable can be used to refere to the common property of all objects
+> the static variables will get memoery only once. if an object changes the value of the static variable it will retian
+  its value
+
+# Static Methods
+If we apply a static keyword with any method, it will be know as static method
+
+> A static method belongs to the class rather then the object of a class
+> A static method can be invoked without the need for creating an instance of a class
+> A static method can access static data member and can change the value of it
+
+# Static block
+> it is used to initialize the static data members
+> it is executed before the main method at the time of class loading
+
+Note: Static members can only access static members only
 
 
 
