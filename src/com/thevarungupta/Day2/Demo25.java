@@ -14,6 +14,7 @@ abstract class Test30 extends Test20{
 
 class Output2 extends Test30{
 
+
     @Override
     public void display1() {
 

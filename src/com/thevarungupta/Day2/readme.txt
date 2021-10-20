@@ -150,5 +150,32 @@ width, height, radius, pie,
 
 
 
+# Interface Vs Abstract class
+- interface is used to achieve 100% abstarction, where as abstract classes are used for partial abstarction
+- interface can be use for multiple inheritence, where abstarct class is a class which means cannot be inherited
+  from more then one class
+
+
+# Interface
+- it is a kind of a contract which needs to be fullfil by a class
+- an interface is java is a bluprint of a class
+- it has static constanst and abstarct methods
+- it is a compile time error to provide an implementation for any interface member
+- if a class inherit from an interface, it must provide an implementation for all interface members
+- interface can also inherit from another interface. A class that inherit from this interface must provide the
+  implementation for all interface members in the entire interface chain
+- we can not create an instance of an interface
+- we can hold the reference of a class that has implemented interface in interface instance
+
+
+
+
+
+
+
+
+
+
+
 
 
