@@ -114,6 +114,19 @@ super-class
 > this can be performed only between parent and child class and never can be done within class
 
 
+# Final 
+> the final keyword in java is used to restrict the user
+> final keyword can be used in many context
+1. variable
+2. method
+3. class
+
+> when we use final keyword with variable, it become constant means its value cannot be changed
+> when we use the final keyword with parent class method, the child class cannot override that method
+> when we use the final keyword with class, no other class can able to inherit from that class
+
+
+
 
 
 
