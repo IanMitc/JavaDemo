@@ -1,7 +1,3 @@
-package com.thevarungupta.Day1;
-
-import java.util.Locale;
-
 public class Book {
     private String title;
     private String author;
