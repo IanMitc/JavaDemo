@@ -230,10 +230,42 @@ default capacity = 16
 
 (16 * 2) + 2  = 34
 
-0
+
+# StringBuilder
+In java StringBuilder class is used to create a mutable String
+the java StringBuilder class is same as StringBuffer class except that it is not synchronized
+
+StringBuilder has almost all method same as StringBuffer
+
+appemd()
+# insert()
+# dleete()
+# replace()
+# reverse()
+# capacity()
 
 
+# String vs StringBuffer
 
+String
+> it is immutable
+> String is slow and consum more memory when you concat too many string
+> string class override the equal() method of object class , can comare the content of two string by equals() method
+
+StringBuffer
+> it is mutable
+> it is fast and consume less memory when you concat string
+> it does not override the equals() method of the object class
+
+# StringBuffer and StringBuilder
+
+StringBuffer
+> it is synchorinized ie thread safe
+> it is less effecient
+
+StringBuilder
+> it is non-synchorinized ie not thread safe
+> it is more efficient
 
 
 

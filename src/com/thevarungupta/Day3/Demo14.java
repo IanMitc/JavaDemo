@@ -6,7 +6,7 @@ public class Demo14 {
         System.out.println(sb.capacity()); // 16
         sb.append("Hello");
         System.out.println(sb.capacity()); // 16
-        sb.append("Welcome to java class, have a nic day");
+        sb.append("Welcome to java class");
         System.out.println(sb.capacity());
     }
 }
