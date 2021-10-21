@@ -168,6 +168,19 @@ width, height, radius, pie,
 - we can hold the reference of a class that has implemented interface in interface instance
 
 
+Java 8, we can have default and static methods in an interface
+Java 9, we can have private method in an interface
+
+Note: by default, interface fields are public, static and final and the methods is public and abstract
+
+Multiple inheritence in java are possible with the help of the interface
+
+> default method in interface
+since java 8 we can have a method body in the interface, but we need to make it default method
+
+> Static method in interface
+Since java 8 we can have a static method in the interface
+
 
 
 
