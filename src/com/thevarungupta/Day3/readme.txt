@@ -52,10 +52,69 @@ protected - the access level of a protected modifier is within the package and o
 public - the access level of a public modifier is everywhere it can be accessed within the class, outside the class, 
          within package and outside the package
 
+Problem
+id = should be negative number
+name = should be null
+pass mark = should be readonly
 
 
+# Java String
+> String is basically an object that represent sequence of char value
+> An array of characters works same as java string
+
+char[] ch = { 'h', 'e', 'l', 'l', 'o' }
+String str = new String(ch);
+
+or
+
+String str = "Hello";
+
+In java.lang contain a class String which implemnets serilazable, comparable, charSequence interface
 
 
+# CharSequence interface
+The CharSequence interface is used the sequence of characters
+
+String
+StringBuffer
+StringBuilder
+
+the java string is immutable which means it cannot be changed, whenever we change any string a new instance is created
+For mutable Strings we can use StringBuffer and StringBuilder class
+
+
+# THere are two we can create a string object
+1. by using String literal
+2. by new keyword
+
+
+1. string literal
+using double quotes we can create string
+
+String str = "Hello";
+
+each time you create a string literal, the JVM check the string constant pool. if the string already exist in the pool
+a reference to the ppol instance is returned. if the string doesnot exist in the pool, new string instance is created and placed 
+in the pool
+
+# why java uses the concept of String literal|?
+- to make java memory efficiet (because no new object are created if it exist already in the string contant pool)
+
+2. by new keyword
+String str = new String("Hello")
+
+JVM will create a new string in normal heap memory and the literal hello will be placed in the string constant pool
+the variable str will refer to the object in the heap
+
+# String class provides various methods
+charAt()
+length()
+subString()
+contains()
+join()
+equals()
+isEmpty()
+concat()
 
 
 
