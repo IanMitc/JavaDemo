@@ -3,7 +3,7 @@ package com.thevarungupta.Day3;
 class Student {
     private int id;
     private String name;
-    private int passMark = 40;
+    private final int passMark = 40;
 
     public int getId(){
         return id;

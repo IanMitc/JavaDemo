@@ -7,7 +7,7 @@ public class Demo5 {
         // if all character are matched it return true
         String s1 = "Mark";
         String s2 = "Mark";
-        String s3 = new String("Mark");
+        String s3 = "Mark";
         String s4 = "Paul";
 
         System.out.println(s1.equals(s2)); // true

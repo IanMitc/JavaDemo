@@ -1,9 +1,9 @@
 package com.thevarungupta.Day1;
 
 class Book2{
-    private String title;
-    private String author;
-    private int price;
+    private final String title;
+    private final String author;
+    private final int price;
 
     public Book2(String title, String author, int price){
         this.title = title;

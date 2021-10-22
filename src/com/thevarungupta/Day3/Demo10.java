@@ -9,7 +9,7 @@ public class Demo10 {
         System.out.println("SubString starting from index 7: "+ message.substring(7));
         System.out.println("SubString starting from index  0 to 7: "+ message.substring(0, 7));
 
-        String str = new String("Welcome home");
+        String str = "Welcome home";
         System.out.println(str);
         System.out.println(str.substring(8));
 
