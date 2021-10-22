@@ -47,6 +47,52 @@ it is keyword which is used to explicity throw an exception
 we can use throw keyword to either throw check or unchecked exception in java
 
 
+# Demo - Finally
+Case 1: exception doesnt occur
+Case 2: exception occurs and not handled
+case 3: exception occurs and handle
+
+# throw vs throws
+throw
+1. java throw keyword is used to explicitly throw an exception
+2. checked exception cannot be propogated using throw only
+3. it is followed by an instance
+4. it is used within the method
+
+throws
+1. java throws keyword is used to declare an exception
+2. check exception can be propgated with throws
+3. it is followed by class
+4. it is used with the method signature
+
+# final vs finally vs finalize
+1. final
+it is used to apply retriction on variable, method and class, final class cann't inherited, final method can't be override,
+final variable value cann't be change
+final is a keyword
+
+2. finally
+it is used to place important code, it will be executed wheather exception is handled or not
+finally is a block
+
+3. finalize
+it is used to perform clean up just before object is garbage collected
+finalize is method
+
+
+# Top 10 exception
+1. NullPointerException()
+2. ArrayIndexOutOfBoundException()
+3. StackOverFlowException()
+4. ClassCastException()
+5. IllegalArgumentException()
+6. NumberFormatException()
+7. IllegalStateException()
+8. NoClassDefFiundException()
+9. AssertException()
+10. ArithmaticException()
+
+
 
 
 
