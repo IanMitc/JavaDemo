@@ -12,7 +12,7 @@ public class Demo13 {
         // 2nd
         try{
 
-        }catch (ArithmeticException e){
+        }catch (ArithmeticException ex){
 
         }catch (Exception e){
 
