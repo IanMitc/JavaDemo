@@ -1,7 +1,7 @@
 package com.thevarungupta.Day2;
 
 interface Foo{
-    String name = "";
+    public String name = "";
     private void display(){
 
     }
