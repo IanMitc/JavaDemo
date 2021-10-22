@@ -306,6 +306,51 @@ The object of the TreeSet class are stored in ascending order
 > it maintains acsending order
 
 
+# Deque interface
+It is an interface which is a linear collection that support elements insertion and removal at both side
+Deque is an acronym "double ended queue"
+
+# ArrayDeque
+It provides the facility of using deque and resizable array
+it inherit from AbstractCollection class and implmenents the deque interface
+
+> unlike queue we can add or remove elements from the both side
+> null element are not allowed
+> it is not thread safe
+> it has no capacity restriction
+> it is faster then linkedlist and stack
+
+add()  -it is used to insert the specified element into deque and return true when sucess
+offer() - it is usewd to insert the specified element into the deque
+
+
+# Queue interface
+> It order the element in FIFO manner (First in First Out)
+> first element is removed first and last element is removed at last
+
+# PriorityQueue
+this is a class which provide the facility of using queue
+but it doe nor orders the elemeent in FIFO manner
+inherits from AbstarctQueue class
+
+Method
+add() - insert element
+remove() - used to retrive and removes the head of the queue
+poll() - it is used to retrive and remove the head of the queu or return null if this queue is empty
+element() - it is used to retrive but doesnot remove the head
+peek() - it is used to retiev but does not remove head of this queue or retuun null
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,19 @@
+# Linked List
+1. Write a Java program to append the specified element to the end of a linked list.
+2. Write a Java program to iterate through all elements in a linked list. 
+3. Write a Java program to iterate through all elements in a linked list starting at the specified position. 
+4. Write a Java program to iterate a linked list in reverse order.
+5. Write a Java program to insert the specified element at the specified position in the linked list. 
+
+# HashSet
+1. Write a Java program to append the specified element to the end of a hash set. 
+2. Write a Java program to iterate through all elements in a hash list. 
+3. Write a Java program to get the number of elements in a hash set. 
+4. Write a Java program to empty an hash set.
+
+# TreeSet
+Write a Java program to create a new tree set, add some colors (string) and print out the tree set. 
+2. Write a Java program to iterate through all elements in a tree set.
+3. Write a Java program to add all the elements of a specified tree set to another tree set. 
+4. Write a Java program to create a reverse order view of the elements contained in a given tree set.
+5. Write a Java program to get the first and last elements in a tree set
