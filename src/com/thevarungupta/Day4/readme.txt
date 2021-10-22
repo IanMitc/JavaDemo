@@ -182,6 +182,40 @@ ArrayList<String> list = new ArrayList<String>()
 
 ["mark", "paul", "john"]
 
+add()
+
+iterating Arraylist using iterator
+
+foreach()
+
+get and set the element of the arraylist
+get() - return the element at the specified index
+set() - to chnage the value at a specified index
+
+
+Sort()
+
+In java.util package, we have a class called collection, which has the static method sort()
+we can use this method to perform sorting of the elements in the ArrayList
+
+ // iterator
+        Iterator iterator = mList.iterator();
+        // hasNext() will check if iterator has the element
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next()); // print element and move the cursor to the next
+        }
+
+        //foreach
+        for (String name : mList) {
+            System.out.println(name);
+        }
+
+
+# iterator interface
+# for-each
+# for loop
+# forEach
+
 
 
 
