@@ -198,23 +198,120 @@ Sort()
 In java.util package, we have a class called collection, which has the static method sort()
 we can use this method to perform sorting of the elements in the ArrayList
 
- // iterator
-        Iterator iterator = mList.iterator();
-        // hasNext() will check if iterator has the element
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next()); // print element and move the cursor to the next
-        }
-
-        //foreach
-        for (String name : mList) {
-            System.out.println(name);
-        }
-
 
 # iterator interface
 # for-each
 # for loop
 # forEach
+
+
+// iterator
+        Iterator iterator = names.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        // for-each
+        System.out.println("------------");
+        for(String name: names){
+            System.out.println(name);
+        }
+
+        // for
+        System.out.println("------------");
+        for(int i=0;i<names.size(); i++){
+            System.out.println(names.get(i));
+        }
+
+        // foreach
+        System.out.println("------------");
+        names.forEach(name -> {
+            System.out.println(name);
+        });
+
+
+
+add()
+remove()
+removeIf()
+etc
+
+
+# LinkedList
+LinkedList class uses a doubly linked list to store the element
+it provides a linked-list data structure, and it inherits the abstractList class and implments the list and
+deque interface
+> LinkedList class can contain the duplicate element
+> LinkedList class maintain insertion order
+> LinkedList class is non-synchronized
+> In LinkedList manipulation is fast because no shifting needs to occur
+> LinkedList class can be used as a list, stack or queue
+
+
+doubley linked list - we can add or remove the element from both side
+
+# ArrayList vs LinkedList
+1. ArrayLiost iternally uses a dynamic array to store the element
+Linked list internally uses a doubly linked list to store the element
+
+2. manipulation is slow as shifting occurs
+manipulation is fast as no shifting require
+
+3. better for sorting and accessing data
+better for manipulating data
+
+4. ArrayLisy class can act as a list only
+LinkedList can act as list and queue both
+
+
+
+# Set
+> HashSet
+> LinkedHashSet
+> TreeSet
+
+# HashSet
+> It is a class used to create a collection that uses a hash table for storage
+> it inherit the AbstractSet class and implment the Set interface
+
+> HashSet stores the elements by using a hashing mechanism
+> it contain unique elements only
+> It allows null value
+> it is non-synchronized
+> it does not maintain the insertion order because the elements are inserted on the basics of thir hashCode
+> it is best for the search operation
+
+
+# List vs Set
+1. List can contain duplicate elements where as Set has unique elements only
+
+# LinkedHashSet
+> It herits hashSet class and implment set interface
+
+> LinkedHashSet class contain unique elements only like HashSet
+> it provides all optional set opeartion and permits null element
+> it is non-synchronized
+> it maintains insertion order
+
+
+# TreeSet
+The TreeSet class implments the Set interface that uses a tree for storage
+It inherit Abstract class and implments the Navigatable Set interface
+The object of the TreeSet class are stored in ascending order
+
+> It contains unique elements only like HashSet
+> It provides access and retival time are faster
+> It does not allow null element
+> it is non-synchronized
+> it maintains acsending order
+
+
+
+
+
+
+
+
 
 
 
