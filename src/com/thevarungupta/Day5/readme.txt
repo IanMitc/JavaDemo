@@ -185,7 +185,65 @@ deadlock can occur in a situation when a thread is waiting for an object lock th
 and second thread is waiting for an object lock that is acquired by the first thread
 since both thread are waiting for each other to release the lock this condition is called deadlock
 
+
 # Java I/O (Input and Output)
+We can perform file handling task in java using I/O API
+
+File file = new File("data.txt")
+this line will not create an physical file
+it will first check any file with this name available or not
+if it is available then it will refer to that file
+if not then we just creating java file object to represent data.txt
+
+
+file.exists()
+return boolean value
+true - file exist
+false - file does not exsits
+
+file.createNewFile()
+
+In UNix everything is a file
+every directory are also known as file
+java file system based on UNIX
+file class can be use to work with either file or directory
+
+file.mkdir() this msthod can be use to create a directory
+
+
+# File
+Contructor 1:
+File file = new File(String name)
+name can be either file or directory name
+file will get created in the current directory
+
+
+
+Constructor 2:
+File file = new File(String subDirectoryName, String fileName)
+subdirectory is your desire location
+this directry can be present in some other location
+
+
+Constructor 3:
+File file = new File(File subDirectory, String name)
+
+
+# File
+exists() - to check file
+createNewFile()
+mkDir()
+isFile() - check we have file or not
+isDirectory()
+list()
+length()
+delete()
+
+
+
+
+
+
 
 
 
