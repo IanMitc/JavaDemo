@@ -276,6 +276,62 @@ transfered to the file including last character
 fw.close()
 
 
+# Type Casting
+
+Type casting is a method or process that convert a data type into another data type in both manually and automatically
+Automatic conversion is done by compiler
+Manual conversion is done by programmer
+
+
+# Type casting types
+1. Implicit / Widening type casting
+2. Explicit  / narrowing type casting
+
+Higher -------------------> lower
+
+double -> float -> long -> int -> short -> byte
+
+lower ------------------> higher - implicit 
+
+
+
+
+# Wrapper class
+
+The wrapper class in java provides the mechanism to covert primitive into object and object into primitive 
+
+boxing / autoboxing
+unboxing
+
+Boxing / autoboxing
+The automatic conversion of primitive data type into its corresponding warpper class is know as autoboxing
+
+Unboxing
+The automatica conversion of wrapper type into its corresponding primitive type is know as unboxing
+
+primitive	wrapper
+--------	-------
+boolean		Boolean
+char		Character
+byte		Byte
+short		Short
+int		Integer
+long		Long
+float		Float
+double		Double
+
+
+
+# Scanner
+The scanner class is used to get user input and it is found in the java.util package
+to use the scanner class, create an object of the class and use any of the available method scanner class
+
+input type
+=========
+nextLine()
+nextBoolea()
+nextInt()
+nextShort()
 
 
 
