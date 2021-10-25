@@ -173,7 +173,19 @@ for example we have 100 lines of code in our method, but we want to synchronized
 > Synchronized block is used to lock an object for any resouces
 > scope of the synchronization block is smaller then the method
 
+# inter thread commnucation
+it all about cooperation or allowing the synchronized thread to communicate with each other
+wait() - current thread to realease the lock and wait until either another thread invokes notify
+notify() - sending a notification to the waiting thread
+notiffyAll()
 
+# Deadlock in java
+Deadlock in java is a part of multi-threading
+deadlock can occur in a situation when a thread is waiting for an object lock that is aquired by another thread
+and second thread is waiting for an object lock that is acquired by the first thread
+since both thread are waiting for each other to release the lock this condition is called deadlock
+
+# Java I/O (Input and Output)
 
 
 
