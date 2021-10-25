@@ -93,6 +93,48 @@ JVM controls the life cycle of the thread in java
 5. non-runnable - still alve but not eligible to run, migh be blocked for any reason
 
 
+# What is thread schedular in java
+Thread schedular is the part of JVM that decide which thread should be run, but there is no guarantee
+that which runnbale thread will be chosen to run by the thread schedular only one thread at a time can be run
+in a single process, it mainly uses time slicing scheduling to schedule the thread
+
+t1 ---------
+t2 ----------
+t3 ---------
+
+# Sleep()
+the sleep() method of the thread class us used to sleep for a specific amount of time
+
+
+# What will happen if i directly call run() instead of start()
+Each thread start in a separate call stack
+invoking the run() method from the main thread, the run() method goes into the current call stack rather then
+at the begining of a new stack
+
+we can call the run() method directly, but there wil be no context switching and t1 and t2 will be treated as
+normal object, not a thread class object
+
+
+# Naming thread
+getName() - find the name of the thread
+setName(name) - use to change the name of the thread
+getCurrentThread() - return the information of the curent thread
+
+
+# Priority of a thread
+Each thread can have their priority
+and this priority is represented by a number between 1 to 10
+most of the cases thread schedular schedule the thread according to their priority
+but is not guaranteed bcoz it depends upon JVM specification
+
+MIN_PRIORITY
+MAX_PRIORITY
+NORM_PRIORITY
+
+
+
+
+
 
 
 
