@@ -240,8 +240,40 @@ length()
 delete()
 
 
+# FileWriter()
+# BufferWriter()
+# PrintWriter()
+
+FileWriter
+
+if you specified file doesnot exist it will create a new file
+
+Constrctor 1:
+FileWriter fw = new FileWriter(String filename)
+
+Constructor 2:
+FileWriter fw = new FileWriter(File file)
+
+Note: What will happen if we already have data in the file?
+by default it will perform override
+override - clear previous data and rewrite
+appemd - add data in exusting file
 
 
+Constructor 3:
+FileWriter fw = new FileWriter(String filename: boolean append)
+true - append
+false - overwrite
+
+Constructor 4:
+FileWriter fw = new FileWriter(File file, boolean append)
+
+fw.flush()
+gives us a kind of gaurantee that all the characters we have passed from the program 
+transfered to the file including last character
+
+
+fw.close()
 
 
 
