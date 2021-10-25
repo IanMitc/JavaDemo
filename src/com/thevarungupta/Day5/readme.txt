@@ -131,9 +131,47 @@ MIN_PRIORITY
 MAX_PRIORITY
 NORM_PRIORITY
 
+# Join()
+Join method wat for a thread to die
+current running thread to stop execution untill the thread it joins will complete its task
 
 
+# Thread Pool
+A thread pool represent a group of workers thread waiting for the job and reusing many times
+In the case of thread pool group of fixed size threads are created 
+A thread from the thread pool is pulled out and assigned a job by service provider
+after completion of the job thread is cointained in the thread pool again
 
+# Advantage thread pool
+Better performance: it save time because there is no need to create a new thread
+
+# Synchorinization
+Ot is a capability to control the access of multiple threads to any share resources
+it gives us a better option where we wabt to allow only one thread to access the shared resouces
+
+
+# Why use synchronization
+1. to prevent thread interfarence
+2. to prevent the consistent problem
+
+
+# Type of synchronization 
+1. process
+2. thread
+
+# Concept of Lock
+Synchronization is built around an internal entity knows as lock or monitor
+every object has a lock associated with it
+every thread that needs consistent access to an object has to acquire the lock before access them
+and then release the lock when it is done
+
+
+# Synchronized block in java
+snchorized block can be perform synchronization on any specific resource of the method
+for example we have 100 lines of code in our method, but we want to synchronized only 10 line of code
+
+> Synchronized block is used to lock an object for any resouces
+> scope of the synchronization block is smaller then the method
 
 
 
