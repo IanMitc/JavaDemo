@@ -333,6 +333,32 @@ nextBoolea()
 nextInt()
 nextShort()
 
+Exercise 1:
+Create a caluculator app 
+----------------------------
+Input:
+Enter First Number : 
+Enter Second Number: 
+
+Select Option:
+1 - Add
+2 - Subtract
+3 - Multiple
+4 - Divide
+
+Output:
+Result: _______
+
+Exercise 2:
+Create an EMI Calculator app
+
+Input:
+Loan Amount
+Rate of Interest
+Tenure
+
+Output:
+EMI:__________
 
 
 
