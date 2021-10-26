@@ -85,8 +85,38 @@ here thescope of the argument is limited to the method where it is declared
 
 it allow to create static as well as non static methods
 
+# Wild card generics
+? - question mark symbol represent the wild card element
+it means any type
+we can write <? extends Shape> it means any child class of shape can be use
 
 
+
+# Java Lambda Expression
+Lambda expression is a new and essential feature that was introduced in java 8
+It provide clear and concise way to represent a method
+the lambda expression is used to provide the implementation of an interface that has function
+it save a lot of code
+
+# functional interface
+An interface that has only one abstract method is called functional interface
+java provides an anotation @FuncionalInterface which can be use to delare an interface as a functional interface
+
+
+Why use lambda expression
+1. to provide the implementaion of function interface
+2. less and concise code
+
+Syntax
+------
+(parameters) -> {
+  // body
+}
+
+lambda expression consist of three main components / parts
+1. parameters - it can be empty or a list of parameter
+2. arrow: it is used to link parameetrs list and body expression
+3. body: it contain expression or statement for lambda
 
 
 

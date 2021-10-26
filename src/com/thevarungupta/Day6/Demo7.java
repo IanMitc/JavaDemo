@@ -1,7 +1,7 @@
 package com.thevarungupta.Day6;
 
 class Test{
-    public <E> void printArray(E[] elements){
+    <E> void printArray(E[] elements){
         for(E element : elements){
             System.out.println(element);
         }
