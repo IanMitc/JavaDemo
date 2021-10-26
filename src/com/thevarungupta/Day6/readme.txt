@@ -36,6 +36,62 @@ equal(object element)
 It provides multiple sorting sequence, or you can sort the elements based on any data members
 
 
+# Generics in Java
+In java generic is a feature which allows to detach data type from method
+it make you code flexibe and which can possibly work with any data type
+
+
+# Problem if you use Object class as a data type
+1. unnecessay bosing and unboxing take place which impact performace
+2. method is no more type safe which means you can compare anything
+
+Advantages:
+1. type safety -  we can hold only a single type of object in generics
+2. type casting is not required
+3. compile time checking
+
+
+# Generics class
+> A class that can refer to any data type is know as generic class
+> we can use T type parameter to create the generic class of a specified type
+
+
+Syntax
+-----
+class MyClass<T>{
+    T obj;
+
+    void add(T obj){
+        this.obj = obj;
+    }
+
+    T get(){
+        return obj;
+    }
+}
+
+this T can be replace by any data type like integer, string, employee
+
+# Type parameters
+T - type
+E - element
+K - key
+N - number
+V - value
+
+# Generic methods
+like generic class we can also create generic methods that can accept any type of parameters
+here thescope of the argument is limited to the method where it is declared
+
+it allow to create static as well as non static methods
+
+
+
+
+
+
+
+
 
 
 
