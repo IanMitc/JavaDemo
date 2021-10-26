@@ -195,7 +195,7 @@ java.io
 
 # Stream API
 Java provides a new additional package in java 8 called java.util.stream
-this package consist of classes, interfaces and enum to allos function stype operation the elements
+this package consist of classes, interfaces and enum it allow function style operation on the elements
 
 Stream provides following features
 1. Stream does not store elements. it simply conveys elements from a source such as a data structure, an array, or an I/O channel through
