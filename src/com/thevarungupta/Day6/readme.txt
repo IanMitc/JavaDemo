@@ -119,6 +119,58 @@ lambda expression consist of three main components / parts
 3. body: it contain expression or statement for lambda
 
 
+# Design Pattern
+
+# What is design pattern?
+> Design patterns are evolving as a resuable solution to the problem that we encounter in our day to day programming
+> It is a template or description for how to solve a problem that can be used in many situtions
+> these design pattern are developed by some industry experts
+> these design pattern are already tested and proven
+> these design patterns are easy for unit testing
+> design pattern can be also helpful for scalability and maintainablity
+
+design pattern are powerfull tools for software development and we should choose the correct design pattern as per the requirement
+
+
+> There is very famous book "Gang for Four"
+according to this book, they have mention 23 design patterns, and have categorized these design pattern into three main categories
+1. creation design pattern
+2. structural design pattern
+3. behavioral design pattern
+
+
+# Creation design pattern
+> this design pattern deals with the object creation and initialization
+> this design pattern gives the program more flexibility in terms of deciding which object need to be created for which class
+1. singleton
+2. factory
+3. abstract factory
+etc
+
+# Structural design pattern
+this pattern focus on decoupling interface and implementation of the class and object or in simple word we can say these design 
+pattern provides better structure for your app
+1. Adapter
+2. Bridge
+etc
+
+
+# Behavioral design pattern
+> this design pattern focus on how your object deal with the communication between the class and object
+what kind of behaviour we are expecting from the object
+1. chain of responsibilioty
+2. interceptor
+3. Observer
+etc
+
+
+# Singleton
+> this pattern belongs to the creation design pattern
+> this pattern is used when we need to make sure only one object or instance of a particular class need to be created, and all
+future references to the object refer to the same object
+
+
+
 
 
 
