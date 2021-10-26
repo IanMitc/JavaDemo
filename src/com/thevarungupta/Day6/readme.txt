@@ -177,7 +177,40 @@ we will take away the responsibility from the main class and hand it over to fac
 dependent class
 
 
+# Serialization and Deserilization
+Serilization in java is a mechanism of writing the state of an object into a byte-stream
+it is mainly used in JPA, Hibernate technologies
 
+the reverse operation of serilization is called deserilization where bytes-stream is converted in object
+The serilozation and deserialization process is platform independent, it means you can serilaize an object on one platform and
+deserilize it on a different platform
+
+writeObject() - serilization
+readObject() - deserlization
+
+Note: we must have to implmenent the Serilizable interface for serializing the object
+
+java.io
+
+
+# Stream API
+Java provides a new additional package in java 8 called java.util.stream
+this package consist of classes, interfaces and enum to allos function stype operation the elements
+
+Stream provides following features
+1. Stream does not store elements. it simply conveys elements from a source such as a data structure, an array, or an I/O channel through
+a pipeline of computational operation
+2. stream is functional in nature. operations performed on a stream does not modify its source for example filtering a stream obtained
+from a collection produce a new stream without the filtered elements, rather than removing elements from thje siurce collection
+3. stream is lazy and evaluates code only when required
+4. the elements of a stream are only visible once during the life of a stream like an iterator a new stream must be generated to revisit 
+the same elements of the source
+
+# Different operation on streal
+> intermediate operation
+- map - it is used to return a stream consisting of the results of applying the given function to the element of this stream
+- filter - it is used to select elements as per Prediacte passed as argument
+- sorted - it is used to sort the stream
 
 
 
