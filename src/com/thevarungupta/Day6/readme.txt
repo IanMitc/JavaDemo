@@ -171,7 +171,10 @@ future references to the object refer to the same object
 
 
 
-
+# Factory design pattern
+this pattern also belong to creation design pattern
+we will take away the responsibility from the main class and hand it over to factory class to produce the object of the
+dependent class
 
 
 
