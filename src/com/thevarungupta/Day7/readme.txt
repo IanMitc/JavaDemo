@@ -252,6 +252,39 @@ mysql> show tables;
 1 row in set (0.00 sec)
 
 
+# DML - Data manipulation Language
+SQL command that deals with the data manipulation of data present in the database belong to DML
+- Insert 
+- Update
+- Delete
+
+> insert into <table_name> values (val1, val2); 
+> insert into <table_name> (col1, col2) values (val2, val2);
+
+> update <table_name> set <col> = val where (condition)
+
+> delete from <table_name> wheer (condition)
+
+
+
+# DQL
+data query language
+- select
+
+all rows all column
+all rows limited column
+limited row limited column
+limited row and all column
+
+> select * from <table>
+> select <col_name1>, <col_name_2> from <table>
+> select <col_name1>, <col_name_2> from <table> with (condition)
+> select * from <table_name> where (condition)
+
+
+
+
+
 
 
 
