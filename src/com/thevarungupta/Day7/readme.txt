@@ -263,7 +263,7 @@ SQL command that deals with the data manipulation of data present in the databas
 
 > update <table_name> set <col> = val where (condition)
 
-> delete from <table_name> wheer (condition)
+> delete from <table_name> where (condition)
 
 
 
@@ -278,8 +278,8 @@ limited row and all column
 
 > select * from <table>
 > select <col_name1>, <col_name_2> from <table>
-> select <col_name1>, <col_name_2> from <table> with (condition)
-> select * from <table_name> where (condition)
+> select <col_name1>, <col_name_2> from <table> where id = 1
+> select * from <table_name> where col_name = val1
 
 
 
