@@ -335,4 +335,119 @@ mysql> select * from employee where name LIKE '_a_k%';
 1 row in set (0.00 sec)
 
 
+
+
+# MySQL Key
+1. Unique Key
+2. Primary Key
+3. Forign Key
+4. Composite Key
+
+
+# Unique key
+it is a signle field that ensure all values that going to store into the column will be unique
+It means a column cannot have a duplicate values
+
+MySQL allows us to use more than one column with unique constraint in a table
+It can accept null
+
+Rules
+-----
+1. it is useful when we want a column cannot have a identical values
+2. it store only distinct value that maintain the integrity and reliablity of the database
+3. it can contain null value but only once
+4. it can also work with forigh key in prventing the uniqueness of the table
+
+
+
+Syntax
+------
+create table table_name (col data_type UNIQUE)
+
+create table employee (id integer, name char(50), email char(50) , CONSTRAINT uq_name_email UNIQUE(name, email));
+
+multi column key - database will not allow to store the value in both column in same combination
+
+
+# Primary key
+primary is used identify each record in a table uniquely
+if a column contains primary key it cannot be null or empty
+when you insert a new row into a table the primary key column can also use AUTO_INCREMENT attribute to generate
+a seqential number for the row automatically
+MySQl automatically create an index for primary column
+
+Rule
+---
+1. primary key column value must be unique
+2. each table can contain only one primary key
+3. the primary key column cannot be null
+4. MySQL does not allow us insert a new row with existng primary key
+5. it is recomanded to use Int as a data type for primary key column
+
+> create table employee (id integer primary key AUTO_INCREMENT, name char(50))
+> create table users (id integer, name char(50), primary key(id));
+
+# Foreign key
+it is used to link one or more then one table together
+it is also know as referencing key
+A foreign key matche the primary key field of another table
+it means a foreigh key field in one table refers to the primary field of the other table
+it is very important to maintain referential integrity in MySQL
+
+A forign key make it possible to create a parent-child relationship with the table
+
+custom
+- cust_id
+ - name
+ - email
+ - phone
+
+
+Address
+ - Address_id
+ - cust_id
+ - city
+ - country
+mysql> create table address (address_id integer primary key auto_increment, cust_id integer, city char(50), constraint fk_customer FOREIGN KEY (cust_id) REFERENCES customner(cust_id));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> describe customer;
+ERROR 1146 (42S02): Table 'revature.customer' doesn't exist
+mysql> describe customner;
++---------+----------+------+-----+---------+----------------+
+| Field   | Type     | Null | Key | Default | Extra          |
++---------+----------+------+-----+---------+----------------+
+| cust_id | int      | NO   | PRI | NULL    | auto_increment |
+| name    | char(50) | YES  |     | NULL    |                |
+| email   | char(50) | YES  |     | NULL    |                |
++---------+----------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+mysql> describe address;
++------------+----------+------+-----+---------+----------------+
+| Field      | Type     | Null | Key | Default | Extra          |
++------------+----------+------+-----+---------+----------------+
+| address_id | int      | NO   | PRI | NULL    | auto_increment |
+| cust_id    | int      | YES  | MUL | NULL    |                |
+| city       | char(50) | YES  |     | NULL    |                |
++------------+----------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # JDBC
