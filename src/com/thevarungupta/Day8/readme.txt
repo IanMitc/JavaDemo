@@ -192,7 +192,147 @@ mysql> select * from employee order by name ASC;
 mysql> select * from employee order by name DESC;
 
 
+# Group by
+it is used to collect data from multiple records and group the result by one or more columns
+it is mostly used with select
+you can also use aggregate function like count, sum, max and min
 
+select expression1, expression2 from table by expression1
+
+
+mysql> select job, count(job) from employee group by job;
++---------+------------+
+| job     | count(job) |
++---------+------------+
+| admin   |          2 |
+| clerk   |          1 |
+| manager |          1 |
++---------+------------+
+3 rows in set (0.00 sec)
+
+
+min
+max
+sum
+avg
+
+mysql> select * from employee;
++----+--------+--------+------+---------+
+| id | name   | salary | age  | job     |
++----+--------+--------+------+---------+
+|  1 | mark   |   5000 |   20 | admin   |
+|  2 | paul   |   4000 |   26 | clerk   |
+|  3 | watson |   8000 |   30 | admin   |
+|  4 | john   |  18000 |   50 | manager |
+|  5 | stacy  |  12000 |   30 | clerk   |
+|  6 | rangel |  22000 |   30 | manager |
++----+--------+--------+------+---------+
+6 rows in set (0.00 sec)
+
+mysql> select job, sum(salary) from employee group by job;
++---------+-------------+
+| job     | sum(salary) |
++---------+-------------+
+| admin   |       13000 |
+| clerk   |       16000 |
+| manager |       40000 |
++---------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> select job, sum(salary), min(salary), max(salary), avg(salary) from employee group by job;
++---------+-------------+-------------+-------------+-------------+
+| job     | sum(salary) | min(salary) | max(salary) | avg(salary) |
++---------+-------------+-------------+-------------+-------------+
+| admin   |       13000 |        5000 |        8000 |   6500.0000 |
+| clerk   |       16000 |        4000 |       12000 |   8000.0000 |
+| manager |       40000 |       18000 |       22000 |  20000.0000 |
++---------+-------------+-------------+-------------+-------------+
+3 rows in set (0.00 sec)
+
+# Having
+it is used with group by clause
+it always return the row where coindition is true;
+
+mysql> select job, sum(salary) from employee group by job having age > 26;
+ERROR 1054 (42S22): Unknown column 'age' in 'having clause'
+mysql> select job, sum(salary) from employee group by job;
++---------+-------------+
+| job     | sum(salary) |
++---------+-------------+
+| admin   |       13000 |
+| clerk   |       16000 |
+| manager |       40000 |
++---------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> select age, job, sum(salary) from employee group by job;
++------+---------+-------------+
+| age  | job     | sum(salary) |
++------+---------+-------------+
+|   20 | admin   |       13000 |
+|   26 | clerk   |       16000 |
+|   50 | manager |       40000 |
++------+---------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> select age, job, sum(salary) from employee group by job age > 25;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'age > 25' at line 1
+mysql> select age, job, sum(salary) from employee group by job having age > 25;
++------+---------+-------------+
+| age  | job     | sum(salary) |
++------+---------+-------------+
+|   26 | clerk   |       16000 |
+|   50 | manager |       40000 |
++------+---------+-------------+
+2 rows in set (0.00 sec)
+
+
+# AND
+# OR
+# AND OR
+# LIKE
+
+%
+wild card
+
+mysql> select * from employee where name LIKE '%el';
++----+--------+--------+------+---------+
+| id | name   | salary | age  | job     |
++----+--------+--------+------+---------+
+|  6 | rangel |  22000 |   30 | manager |
++----+--------+--------+------+---------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee where name LIKE '%a%';
++----+--------+--------+------+---------+
+| id | name   | salary | age  | job     |
++----+--------+--------+------+---------+
+|  1 | mark   |   5000 |   20 | admin   |
+|  2 | paul   |   4000 |   26 | clerk   |
+|  3 | watson |   8000 |   30 | admin   |
+|  5 | stacy  |  12000 |   30 | clerk   |
+|  6 | rangel |  22000 |   30 | manager |
++----+--------+--------+------+---------+
+5 rows in set (0.00 sec)
+
+mysql> select * from employee where name LIKE '_a%';
++----+--------+--------+------+---------+
+| id | name   | salary | age  | job     |
++----+--------+--------+------+---------+
+|  1 | mark   |   5000 |   20 | admin   |
+|  2 | paul   |   4000 |   26 | clerk   |
+|  3 | watson |   8000 |   30 | admin   |
+|  6 | rangel |  22000 |   30 | manager |
++----+--------+--------+------+---------+
+4 rows in set (0.00 sec)
+
+mysql> select * from employee where name LIKE '_a_k%';
++----+------+--------+------+-------+
+| id | name | salary | age  | job   |
++----+------+--------+------+-------+
+|  1 | mark |   5000 |   20 | admin |
++----+------+--------+------+-------+
+1 row in set (0.00 sec)
 
 
 # JDBC
