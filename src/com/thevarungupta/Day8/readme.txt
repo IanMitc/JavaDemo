@@ -93,6 +93,106 @@ mysql> create table employee (id integer, gender ENUM('male', 'female'));
 2 rows in set (0.00 sec)
 
 
-
 # ADvance Queries
+# MySQL Clauses
+> where
+> distinct
+> from
+> order by
+> group by
+> having
+
+# MySQL where clause
+where clase is used to write condition
+
+where - single condition				
+
+> select * from employee wheer id = 1;
+
+AND - bith side condition should be true
+
+> select * from employee where id = 1 and name = 'mark';
+
+OR - any condition from any side should be true
+
+> select * from employee where id  =1 and name = 'Paul';
+
+mysql> select * from employee where status != 'true';
++------+------+-------------+--------+
+| id   | name | email       | status |
++------+------+-------------+--------+
+|    4 | john | j@gmail.com | false  |
++------+------+-------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee where name = 'mark' and status = 'true';
++------+------+-------------+--------+
+| id   | name | email       | status |
++------+------+-------------+--------+
+|    1 | mark | m@gmail.com | true   |
++------+------+-------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee where name = 'mark' and status = 'false';
+Empty set (0.00 sec)
+
+mysql> select * from employee where name = 'mark' or status = 'false';
++------+------+-------------+--------+
+| id   | name | email       | status |
++------+------+-------------+--------+
+|    1 | mark | m@gmail.com | true   |
+|    4 | john | j@gmail.com | false  |
++------+------+-------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employee where name = 'mark' or status = 'true';
++------+--------+-------------+--------+
+| id   | name   | email       | status |
++------+--------+-------------+--------+
+|    1 | mark   | m@gmail.com | true   |
+|    2 | paul   | p@gmail.com | true   |
+|    3 | watson | w@gmail.com | true   |
++------+--------+-------------+--------+
+3 rows in set (0.00 sec)
+
+# Distinct
+it is used to remove duplicate records from the table and fetch only unique record
+
+select DISTINCT id from users
+
+mysql> select DISTINCT status from employee;
++--------+
+| status |
++--------+
+| true   |
+| false  |
++--------+
+2 rows in set (0.00 sec)
+
+
+# Order By
+it is used to sort the record in ascending or descending order
+
+select * from employee order by col asc / desc
+
+> select * from employee order by id;
+> select * from employee order by id DESC;
+
+mysql> select * from employee order by name ASC;
++------+--------+-------------+--------+
+| id   | name   | email       | status |
++------+--------+-------------+--------+
+|    4 | john   | j@gmail.com | false  |
+|    1 | mark   | m@gmail.com | true   |
+|    2 | paul   | p@gmail.com | true   |
+|    3 | watson | w@gmail.com | true   |
++------+--------+-------------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from employee order by name DESC;
+
+
+
+
+
 # JDBC
