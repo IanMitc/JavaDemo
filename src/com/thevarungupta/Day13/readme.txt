@@ -142,3 +142,22 @@ there are two type of list
 - ordered list  - <ol>
 
 list item - <li>
+
+# HTML Tables
+<table> - root element of tanle
+<tr> - table row
+<td> - table data 
+<th> - table head
+
+colspan - to merge column
+
+rowspan - to merge row
+
+# HTML forms
+forms are esential for any app to take input from the user
+textbox
+dropdown
+checkbox
+radio
+button
+textarea
