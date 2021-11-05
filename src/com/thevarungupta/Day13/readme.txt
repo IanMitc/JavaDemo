@@ -215,3 +215,11 @@ localstorage.key
 localstorage.clear()
 localstorage.removeItem(key)
 
+# Multimedia 
+in this we can add audio and video into our web page
+
+<audio>
+<video>
+
+# Drag and drop
+
