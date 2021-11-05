@@ -161,3 +161,31 @@ checkbox
 radio
 button
 textarea
+
+# HTML5
+> Semantic elements / tags
+A semantic elements clearly descrie your HTML document1
+
+Web form 2.0
+
+# Html5 new API
+- Geolocation
+- Drag and Drop
+- Web Storage
+- Multimedia
+- SVG and Canvas
+- web worker
+
+
+# Geolocation
+It is used to locate the user position but since this is the matter of user privacy the position
+is not available unless the user approve it
+
+the getCurrentPosition() which is used to return the user position
+this return the latitude and longitude of user position
+
+Steps
+1. check if geolocation api is supported or not by browser
+2. if supported run the getCurrentPosition() method
+3. if successfull it returns coordinates
+4. display or can use cordinate to find user location
