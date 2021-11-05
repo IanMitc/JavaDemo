@@ -189,3 +189,29 @@ Steps
 2. if supported run the getCurrentPosition() method
 3. if successfull it returns coordinates
 4. display or can use cordinate to find user location
+
+
+# Web Storage
+Web storage can be use to save data at client side
+this is consider to be better then cookies
+because unlike cookies the storage is far larger at least (5 MB) and the information is store 
+before local storage we store the data in cookies
+we can have local storage as er domain
+
+
+Type of web storage
+1. local storage - data with no expire data
+2. session storage - data for one session (data will lost when browser tab is closed)
+
+// store data
+localstorage.setItem(key, value)
+localstorage.key = 'value'
+
+// retrive the data
+localstorage.getItem(key)
+localstorage.key
+
+// remove
+localstorage.clear()
+localstorage.removeItem(key)
+
