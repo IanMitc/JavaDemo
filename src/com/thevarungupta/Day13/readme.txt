@@ -115,3 +115,30 @@ that we can use pre tag
 any text between the opening <pre> tag and closing will preserve the formatting of the source
 document
 
+
+# HTML Links
+HTML links are define with <a> tag or anchor tag which basically use for navigation purpose
+so we can refer to any page inside our root folder or any external url
+
+example:
+<a href="">Click Me</a>
+
+# HTML image
+HTML images are define with <img> tag
+this is also one of the self closing tag or empty element
+img tag has some attributes
+- src - source of the image / location
+- title - tooltip
+- alt - alternative text
+- width
+- height
+
+<img src="" alt="" title="" />
+
+# Html List
+list are used to display the item as a list
+there are two type of list 
+- unordered list - <ul>
+- ordered list  - <ol>
+
+list item - <li>
