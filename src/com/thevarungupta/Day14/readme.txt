@@ -133,3 +133,32 @@ only last parameter can be rest parameter or rest parameter must appear at the e
 # Spread Opeartor
 Es6 provides a new opeartor called spread opeartor that consist of three dots(...)
 the spread opeartor allows you to spread out elements of an iterable object such as an array, map, set etc
+
+
+# Destructing
+it allow us to destructure properties of an object or elements of an array into individual variables
+
+# for..of loop
+ES6 introduced a new construct for..of that creates a loop that iterate over iterable objects 
+
+# template literals
+Prior to ES6 you use single quotes or double quotes to wrap a string leteral
+and string jave very limited functionality
+
+
+in ES6 you can create template literal by wrapping you text backticks
+- A multline string
+- String formatting
+- html eascaping
+
+# Array function
+ES6 arrow functions provide you with an alternative way to write shorter syntex compare to the function expression
+
+# map function
+map() method create a new array with the result of calling a function for every array element
+
+
+
+
+
+
