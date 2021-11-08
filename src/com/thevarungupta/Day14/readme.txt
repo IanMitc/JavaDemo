@@ -227,3 +227,17 @@ by the help of document object, we can add dyanmic content to our page
 </html>
 
 
+getElementById()
+getElementByClassName()
+getElementByTagName()
+
+innerHTML
+
+Event
+click       onclick
+mouseover   onmouseover
+mouseup
+mousedown
+keyup
+keydown
+change
