@@ -105,3 +105,31 @@ switch
 for
 for-each
 while
+
+# ECMAScript
+ECMAScript stands for European Computer Manufacturers Association Script
+
+It lays out the specification and basic rules of language on which Javascript is based
+- ES6 / ECMAScript 2015 was the second major realease for javascript
+- Also know as JavaScript 6 as it is majorily derived from Netscape javascript
+- ECMAScript has laid out a core object oriented language to which objects of any particular domain can be added
+
+# Let
+ES6 provides a new way of declaring a variable by using let keyword
+except that these variable are blovked-scope
+
+# const
+Es6 provide a new way of declaring constant by using const keyword
+const keyword can't be reassigned
+const keyword are immutable
+
+# Deafult parameters
+allow you to initialize named parameters with default values
+
+# Reset parameters
+Es6 provides a new kind of parameetrs that has a prefix of three dots
+only last parameter can be rest parameter or rest parameter must appear at the end of argument list
+
+# Spread Opeartor
+Es6 provides a new opeartor called spread opeartor that consist of three dots(...)
+the spread opeartor allows you to spread out elements of an iterable object such as an array, map, set etc
