@@ -166,6 +166,64 @@ unlike other programming language such as Java and C#,, Javascript classes are s
 prototype 
 ES6 classes are just special functions
 
+# declare a class as an expression
 
+# static method
+By definition static methods are associated with a class not the instances of that class. this static
+methods are useful for defining helper or utlity methods
+
+inES6 you define static methods using the static keyword
+
+# Computed properties
+
+ES6 allows you to use an expression in bracket[]. it will then use the result of the expression as the 
+property name of an object
+
+the get[name] is a computer property
+
+# Inheritance suign extens and super
+prior to ES6 implementing a proper inheritence required multiple steps
+one of the msot commonly used strategies is the prototype
+
+ES^ simplified these steps by using extends and super keyword
+
+
+# JavaScript BOM
+BOM - Browser Object Model
+The BOM is used to intercat with the browser
+
+window
+- document
+- history
+- screen
+- navigator
+- location
+
+Window object represent a window in a browser. An object of window is created automatically by browser
+
+window.alert()
+alert()
+
+
+
+
+# JavaScript DOM
+document object model which represent the whole html documnent
+when html document is loaded in the browser, it become a document object. it is the root element that 
+represent the html document
+it has properties and method
+by the help of document object, we can add dyanmic content to our page
+
+
+<html>
+   <head>
+      <title>
+      </title>
+   </head>
+   <body>
+      <h1></h1>
+      <img />
+   <body>
+</html>
 
 
