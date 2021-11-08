@@ -158,6 +158,13 @@ ES6 arrow functions provide you with an alternative way to write shorter syntex 
 map() method create a new array with the result of calling a function for every array element
 
 
+# Class
+A javascript class is a blue print for creating objects. A class encapsulates data and functions
+that manipulate data
+
+unlike other programming language such as Java and C#,, Javascript classes are syntactic sugar over the
+prototype 
+ES6 classes are just special functions
 
 
 
