@@ -130,7 +130,15 @@ readyState is a property of XMLHttpREquest object which holds the status of the 
 7. display the outout or can take a actioj like page update by javascript
 
 
+# Asynchoronous
+> callback - in simple words I will call u back
+A callback is a function passed as an argument to another fucntion this technique allows a function to call 
+another function after it execute completly
 
+# callback
+A call back is a function passed as an argument to another function using a callback, 
+you can vall any function with a callback
+and that function run the callback after it got finished
 
 
 

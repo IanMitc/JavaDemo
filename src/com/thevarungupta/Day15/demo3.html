@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <button onclick="getData()">Get Data</button>
+    <div id="result"></div>
+
+    <script>
+
+
+
+      function getData() {
+        // create XMLHttpRequest object
+        var request = new XMLHttpRequest();
+
+        // instantiate the request object
+        // open(method_type, url, async)
+        request.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+
+        // defining event listener for readyStateChnage event
+        request.onreadystatechange = function () {
+          // check if the request is completed and was successfull
+          if (this.readyState == 4 && this.status == 200) {
+            // inserting the response from the server into the html element
+            var response = this.responseText;
+            var data = JSON.parse(response)
+            var text = "";
+            text += `<table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>UserId</th>
+                                <th>Title</th>
+                                <th>Body</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+
+            for(let i=0;i<data.length;i++){
+                text += `
+                <tr>
+                    <td>${data[i].id}</td>
+                    <td>${data[i].userId}</td>
+                    <td>${data[i].title}</td>
+                    <td>${data[i].body}</td>
+                </tr>`
+            }
+
+            text += `</tbody>
+                </table>`;
+                document.getElementById('result').innerHTML = text;
+          }
+        };
+
+        // sending the request to the server
+        request.send();
+      }
+    </script>
+  </body>
+</html>
