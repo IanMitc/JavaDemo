@@ -140,6 +140,49 @@ A call back is a function passed as an argument to another function using a call
 you can vall any function with a callback
 and that function run the callback after it got finished
 
+# Promises
+like in a real life we make some commitment which either get completed or break
+either we get the data or not or in other words either resolve or rejected
+
+Promises
+- resolved
+- fullfilled
+- pending
+- rejected
+
+
+myPromise
+ .then(response)
+  .catch(error)
+
+
+# Fetch API
+No need to use XMLHtpREquest anymore
+the fetch API interfac allows web browser to make HTPP request to web server
+the fetch API will return promise
+
+what ever we can do with XMLHttpRequest object the fetch API can perform all the task as the 
+XMLHttpRequest object code
+
+inn addition the fetch API is much simpler and clearner
+it uses promises to deliver more flexible features to make request to server from web browser
+
+the fetch() method is available in global scope that instruct the web browser to a request to a ur;
+
+send a request
+
+fetch()
+ .then()
+ .catch()
+
+ fetch only require one parameter which is the URL of the resource that you want to handle
+
+
+
+
+
+
+
 
 
 
