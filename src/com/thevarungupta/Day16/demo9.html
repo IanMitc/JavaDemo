@@ -5,9 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+        .wrapper{
+            width: 800px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Oswald', sans-serif;
+        }
+        thead{
+            background-color: green;
+            color: #fff;
+        }
+        th, td{
+         
+            color: green;
+            padding: 20px;
+            font-size: 32px;
+            text-align: center;
+        }
+        tr{
+            border: 1px solid green;
+        }        
+
+        th{
+            color: #fff;
+        }
+
+        tr:nth-child(even){
+            background-color: #ccc;
+        }
+        tr:hover{
+            background-color: lightgreen;
+        }
+
+    </style>
 </head>
 <body>
     
+    <div class="wrapper">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>m@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paul</td>
+                    <td>p@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Watson</td>
+                    <td>w@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>m@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paul</td>
+                    <td>p@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Watson</td>
+                    <td>w@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
 
     
 </body>
