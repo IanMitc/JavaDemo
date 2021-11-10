@@ -72,7 +72,37 @@ width = 20 + 200 + 20
 width = 240
 
 
+# Bootstrap
+- Bootstrap is a CSS library which provide ready to use css classes
+- Bootstrap can be use to make web pages attractive and standard
+- bootstrap is a one of the most liked and star project in github
+- bootstrap is develop by the creater of twitter
+- bootstrap is used to create responsive design
 
+# Bootstrap can be install in 2 ways
+1. using CDN
+2. downloading source code and adding reference locally
+
+
+# Bootstrap consist 
+- css files
+- js files
+
+# Typography
+text-center
+text-right
+text-left
+text-large
+text-small
+
+# color convention
+danger - red
+success - green
+warning - orange
+primary - blue
+dark - black
+light - white
+info - blue
 
 
 
