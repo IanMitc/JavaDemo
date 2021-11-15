@@ -65,6 +65,85 @@ addCookie()
 getCookies()
 
 
+# RequestDispatcher in servlet
+- It is an interafce which provides the facility of dispatching the request to another resources it may by html, jsp or servlet
+- this interface can also be used to inclide the content of another resouces
+- in simple way it is kind of collaboration between the servlet
+
+# Methods of RequestDispatcher interface
+there are two methods
+1. forword() - forward a request from servlet to anoter resources (html, jsp, servelt) on the server
+2. include() - include the content of a resource in the response
+
+
+# Execise:
+We will take the input forom the user and send the information to the validate servlet which will check the information and if
+information is correct forward the request to welcome servlet else display the error message
+
+
+Solution
+1. index.html  -take the input from the user
+2. loginServlet  -servlet responsable to check and forward the request accordingly
+3. welcomeServlet - display welcome message
+4. web.config - config
+
+
+# Exercise 2: Login app with cookies
+we will use cookies to maintain user status after login
+
+Solution:
+1. index.html
+2. loginServlet
+3. logoutServlet
+4. ProfileServlet
+5. web.xml
+
+
+# SendRedirect in servlet
+The sendRedirect() mehod of HttpServletResponse interface can be used to redirect response to another resource
+
+it will accept relative as well as absoulte URL
+
+it work at client side beacise it use URL bar of the prowser to make another request
+
+# forward() vs sendRedirect() method
+
+forward()
+- it work at a server side
+- it can work within server only
+- it send the same request and response object to anoter servlet
+
+sendRedirect()
+- work at client side
+- it can be used within and outside the server
+- it always send a new request
+
+
+
+# state management
+1. cookies
+2. hidden field
+3. url rewriting
+4. httpSession
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
