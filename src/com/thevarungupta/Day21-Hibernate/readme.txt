@@ -137,13 +137,124 @@ MySQL
 Postgrss
 
 
+# Save data
+
+save()
+
+# fetch data
+
+get()
+load()
+
+get()
+- get method of hibernate session returns null if the object is not found in cache as well as on database
+- use if you are not sure that object exists in databbase or not
+- get() involve database if objet doesn't exist in the session cache and return a fully initialized object
+  which may involve several database call
+
+
+load()
+- this method throw ObjectNotFoundException if object is not found on cache as well as database but never return null
+- use if you are sure that object exist
+- load method can return proxy in place and only initialize the object or hit the dataabse of any method other then
+  getId() is called on entity object
+  this lazy initialization increase the performace
+
+
+# Create first hibernate app
+1. create maven project
+2. add two dependencues in the pom.xml
+  - hibernate-core
+  - mysql-connector-java
+
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.6.1.Final</version>
+</dependency>
 
 
 
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.27</version>
+</dependency>
 
 
+3. hibernate configuration - hibernate.cfg.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/revature</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <mapping class="com.revature.Employee" />
+    </session-factory>
+</hibernate-configuration>
 
 
+4. create persistent class
+ @Entity
+public class Employee {
+    @Id
+    private int id;
+    private String name;
+    private String email;
+
+    public Employee(){}
+
+    public Employee(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
+
+
+5. app.java
+create connection
+open session
+start transaction
+create employee object
+save
+commit
+close
 
 
 
