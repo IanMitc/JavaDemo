@@ -38,6 +38,38 @@
 - Props are the arguments passed in React components
 - props are passes to components view HTML attribute
 
+# State
+- React components has built in state object
+- the state object is where you store property values that belong to the components
+- when the state object changes the components re-render
+
+
+
+
+# State vs Props
+Props
+- Read only and immutable
+- passing data from one component to another as an argument
+- props can be accessed by child component
+- stateless component can have props
+
+
+State
+- states are mutable
+- state contain information regarding the component at given time
+- state is managed with in the component
+- stateless component cannot have state
+
+
+# Events
+An event is an action that could be triggered by user interaction or can be the result of system generated
+event
+-click
+-mouseove
+-change
+etc
+
+
 
 
 
