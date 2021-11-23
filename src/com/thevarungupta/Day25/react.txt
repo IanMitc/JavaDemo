@@ -1,0 +1,12 @@
+# Forms
+
+Forms are essential part of any application
+can be use to collect data from the user
+can be execute different type of task
+
+React form
+- controlled component
+- uncontrolled component
+
+control component
+- the from input element is handled by the component itself with mutable state 
