@@ -1,0 +1,35 @@
+var a = 10;
+a = 20;
+var b = 20;
+b = 30;
+var c = 10;
+//c = 20;
+var e;
+e = 10;
+e = 'A';
+e = true;
+e = 10.0;
+var f;
+f = 100;
+//f  = 'A';
+var g;
+var h;
+var i;
+var j;
+var k = [1, 2, 3, 'A', true, 10.00];
+var l = [1, 2, 3];
+var colorRed = '';
+var colorGreen = '';
+var Days;
+(function (Days) {
+    Days[Days["Monday"] = 0] = "Monday";
+    Days[Days["Tuesday"] = 1] = "Tuesday";
+    Days[Days["Wednesday"] = 2] = "Wednesday";
+})(Days || (Days = {}));
+var currentDay = Days.Monday;
+var Gender;
+(function (Gender) {
+    Gender[Gender["Male"] = 100] = "Male";
+    Gender[Gender["Female"] = 200] = "Female";
+})(Gender || (Gender = {}));
+var yourGender = Gender.Male;
