@@ -249,7 +249,11 @@ Exericise 4: setter injection with ref type
     </bean>
 
 
-Exercise 5: 
+Exercise 5: Constructor injection
+
+
+Exercise 6: Ambiguity problem with constructorm injection
+when we have multiple constructor which take different type of parametere
 
 
 
