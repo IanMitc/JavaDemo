@@ -208,13 +208,48 @@ Exercise 2: Property injection using value as attribute or using p schema
 
 
 Exercise 3: How to inject collection type (list, set, map etc)
+<bean class="com.revature.Employee" name="employee1">
+        <property name="name" value="mark"/>
+        <property name="phones">
+            <list>
+                <value>9999</value>
+                <value>8888</value>
+                <value>7777</value>
+            </list>
+        </property>
+        <property name="address">
+            <set>
+                <value>India</value>
+                <value>USA</value>
+                <value>UK</value>
+            </set>
+        </property>
+        <property name="departments">
+            <map>
+                <entry key="admin" value="USA"/>
+                <entry key="sales" value="UK"/>
+                <entry key="IT" value="Japan" />
+            </map>
+        </property>
+    </bean>
 
 
 
 
+Exericise 4: setter injection with ref type
+<bean class="com.revature.Address" name="address1">
+        <property name="city" value="NY"/>
+        <property name="country" value="USA"/>
+    </bean>
+
+    <bean class="com.revature.Customer" name="customer1">
+        <property name="custId" value="101"/>
+        <property name="name" value="Paul"/>
+        <property name="address" ref="address1"/>
+    </bean>
 
 
-
+Exercise 5: 
 
 
 
