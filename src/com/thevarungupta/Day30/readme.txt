@@ -195,6 +195,17 @@ ApplicationContext context =  new ClassPathXmlApplicationContext("config.xml");
 Step 8: run the application and chek the output in the console
 
 
+Exercise 2: Property injection using value as attribute or using p schema
+
+
+ <bean class="com.revature.Student" name="student2">
+        <property name="studentId" value="201"/>
+        <property name="studentName" value="Paul"/>
+        <property name="studentEmail" value="p@gmail.com"/>
+    </bean>
+
+    <bean class="com.revature.Student" name="student3" p:studentId="301" p:studentName="Watson" p:studentEmail="w@gmail.com"/>
+
 
 
 

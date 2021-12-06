@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Exercise 1: Setter injection -->
+    <bean class="com.revature.Student" name="student1">
+        <property name="studentId">
+            <value>101</value>
+        </property>
+        <property name="studentName">
+            <value>Mark</value>
+        </property>
+        <property name="studentEmail">
+            <value>m@gmail.com</value>
+        </property>
+    </bean>
+
+    <!-- Exercise 2: Setter injection using value as attribute and P schema -->
+    <bean class="com.revature.Student" name="student2">
+        <property name="studentId" value="201"/>
+        <property name="studentName" value="Paul"/>
+        <property name="studentEmail" value="p@gmail.com"/>
+    </bean>
+
+    <bean class="com.revature.Student" name="student3" p:studentId="301" p:studentName="Watson"
+          p:studentEmail="w@gmail.com"/>
+    
+    <!-- Exercise 3: Setter injection with collection type -->
+    <bean class="com.revature.Employee" name="employee1">
+        <property name="name" value="mark"/>
+        <property name="phones">
+            <list>
+                <value>9999</value>
+                <value>8888</value>
+                <value>7777</value>
+            </list>
+        </property>
+        <property name="address">
+            <set>
+                <value>India</value>
+                <value>USA</value>
+                <value>UK</value>
+            </set>
+        </property>
+        <property name="departments">
+            <map>
+                <entry key="admin" value="USA"/>
+                <entry key="sales" value="UK"/>
+                <entry key="IT" value="Japan" />
+            </map>
+        </property>
+    </bean>
+
+</beans>
