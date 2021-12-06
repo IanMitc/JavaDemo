@@ -207,7 +207,7 @@ Exercise 2: Property injection using value as attribute or using p schema
     <bean class="com.revature.Student" name="student3" p:studentId="301" p:studentName="Watson" p:studentEmail="w@gmail.com"/>
 
 
-
+Exercise 3: How to inject collection type (list, set, map etc)
 
 
 
