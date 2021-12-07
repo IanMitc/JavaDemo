@@ -58,12 +58,29 @@ IOC container and spring MVC container
 
 
 
+# Spring with ORM Framework
+Spring provides API to easily integrate Spring with ORM framework such as Hibernmate, JPA, JDO etc
+
+Advatanges
+- less coding is required - by the help of spring framework, yuou domt need to write extra code before and after the actual database
+  logic such as getting the connection, starting transaction, commiting transaction, closing connection
+- East to test - Spring IOC approach makes it east to test the app
+- Better exception handling - spring framework provides its own API for exception handlking with ORM framework
+- integrated transaction manageemnt: by the help of spring framework we can wrap our mapping code with the explicit template wrapper
+class
 
 
+HibernateTemplate 
+the spring framework provides HibernateTemplate class, so you dont need to follow so many steps like create Configuration, 
 
 
-
-
+Exercise: Hibertate and Spring integration
+1. create table in database
+2. create applicationConfig file
+3. Create employee pojo class
+4. create .xml file 
+5. employeeDao file
+6. insert into database
 
 
 
