@@ -43,12 +43,48 @@ then it organize the different components configuared in spring web app contexyt
 1. create maven project by choosing webapp from the template
 
 2. add spring MVC dependency in pom.xml
-
+ <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.3.13</version>
+    </dependency>
 
 3. configure the dispatch Servlet in the web.xml
-  create a file by name spring-servlet.xml
+  
+  <!-- Configure dispatch servlet -->
+  <servlet>
+      <servlet-name>spring</servlet-name>
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 
 4. configure ViewResolver
+
+create a file by name spring-servlet.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- bean definitions here -->
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+            name="viewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+</beans>
 
 5. create controller
 
