@@ -105,8 +105,39 @@ theer are 4 layers which spring boot follow
 
 
 
+GET - /employees   	-  list employee
+GET - /employees/id	-  employee by id
+POST - /employees	-  create employee
+PUT - /employee/id	-  update
+DELETE-/employee/id	-  Delete
 
 
 
 
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+
+
+
+
+
+
+
+server.port=9001
+
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:test
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=admin
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
