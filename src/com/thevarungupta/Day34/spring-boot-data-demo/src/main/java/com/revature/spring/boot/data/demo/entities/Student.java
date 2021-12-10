@@ -1,9 +1,6 @@
 package com.revature.spring.boot.data.demo.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -12,6 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 @Table(
         name = "tbl_student",
         uniqueConstraints = @UniqueConstraint(
@@ -37,7 +35,6 @@ public class Student {
             nullable = false
     )
     private String emailId;
-    private String guardianName;
-    private String guardianEmail;
-    private String guardianMobile;
+    @Embedded
+    private Guardian guardian;
 }
