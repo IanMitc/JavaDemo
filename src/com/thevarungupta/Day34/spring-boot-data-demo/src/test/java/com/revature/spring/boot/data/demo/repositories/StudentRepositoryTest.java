@@ -8,14 +8,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 class StudentRepositoryTest {
 
     @Autowired
-    private StudentRepository repository;
-
+    private StudentRepository studentRepository;
+    @Autowired
+    private GuardianRepository guardianRepository;
     @Test
     public void saveStudnet() {
 
@@ -24,7 +23,7 @@ class StudentRepositoryTest {
                 .firstName("Mark")
                 .lastName("Smith")
                 .build();
-        repository.save(student);
+        studentRepository.save(student);
     }
 
     @Test
@@ -34,6 +33,9 @@ class StudentRepositoryTest {
                 .email("pg@gmail.com")
                 .mobile("9999")
                 .build();
+
+        guardianRepository.save(guardian);
+
         Student student = Student.builder()
                 .firstName("mark2")
                 .lastName("watson")
@@ -41,12 +43,12 @@ class StudentRepositoryTest {
                 .guardian(guardian)
                 .build();
 
-        repository.save(student);
+        studentRepository.save(student);
     }
 
     @Test
     public void findStudentsByFirstName() {
-        List<Student> list = repository.findByFirstName("sss");
+        List<Student> list = studentRepository.findByFirstName("sss");
         System.out.println("Studnets: " + list);
     }
 

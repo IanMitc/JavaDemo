@@ -1,20 +1,23 @@
 package com.revature.spring.boot.data.demo.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
-@Embeddable
-@Data
+
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
+@Table(
+        name = "tbl_guardian",
+        uniqueConstraints = @UniqueConstraint(
+                name = "email_unique",
+                columnNames = "guardian_email"
+        ))
 @AttributeOverrides({
         @AttributeOverride(
                 name = "name",
@@ -30,7 +33,14 @@ import javax.persistence.Embeddable;
         )
 })
 public class Guardian {
+    @Id
+    private long guardianId;
     private String name;
     private String email;
     private String mobile;
+
+    @Getter
+    @Setter
+    @OneToMany(mappedBy = "guardian")
+    Set<Student> students = new java.util.LinkedHashSet<>();
 }

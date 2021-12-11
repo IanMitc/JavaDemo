@@ -5,17 +5,13 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
-@Table(
-        name = "tbl_student",
-        uniqueConstraints = @UniqueConstraint(
-                name = "email_unique",
-                columnNames = "email_address"
-        ))
+@Table(name = "tbl_student", uniqueConstraints = {
+        @UniqueConstraint(name = "email_unique", columnNames = {"email_address"})
+})
 public class Student {
     @Id
     @SequenceGenerator(
@@ -35,6 +31,11 @@ public class Student {
             nullable = false
     )
     private String emailId;
-    @Embedded
+
+
+    @Getter
+    @Setter
+    @ManyToOne
+    @JoinColumn(name = "guardian_guardian_id")
     private Guardian guardian;
 }
